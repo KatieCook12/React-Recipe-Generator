@@ -4,7 +4,7 @@ A recipe generator app built with React, integrating the **Anthropic AI SDK** to
 
 Building this project deepened my understanding of React’s component structure, handling API requests, and managing environment variables securely. I also learned how to structure a React project for scalability and how to work with third-party AI APIs to enrich user experiences.
 
-<img src="src/images/recipe-generator-screenshot.png" alt="Recipe Generator UI" width="500">
+<img src="src/images/recipe-generator.png" alt="Recipe Generator UI" width="400">
 
 ---
 
