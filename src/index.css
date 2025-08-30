@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  width: 393px;
+  height: 939px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #FDFDFD;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

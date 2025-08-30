@@ -1,0 +1,292 @@
+/* === ROOT CONTAINER === */
+#root {
+  display: flex;
+  width: 393px;
+  height: 939px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* === TYPOGRAPHY === */
+h1 {
+  color: #FDFDFD;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+h2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+h3{
+color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin: 0
+}
+
+h4{
+  margin: 0;
+  color: #000;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 21px; 
+}
+
+ul{
+  margin:0;
+  color: #3C3C3C;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 23px; /* 191.667% */
+}
+
+ol{
+  margin: 0;
+  color: #3C3C3C;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 23px; /* 191.667% */
+}
+
+p{
+color: #3C3C3C;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+
+header p {
+color: #FDFDFD;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin: 0;
+}
+
+/* === BUTTONS === */
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.ingredients-list-container button {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+}
+
+.ingredients-list-container button:hover {
+  background: rgba(94, 134, 0, 0.30);
+}
+
+.ingredients-list-container button:focus {
+  background: rgba(94, 134, 0, 0.60);
+}
+
+/* === HEADER === */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+  align-self: stretch;
+  border-radius: 0px 0px 15px 15px;
+  background: #5E8600;
+}
+
+header h3{
+    color: #FDFDFD;
+}
+
+/* === MAIN SECTION === */
+.main {
+  display: flex;
+  width: -webkit-fill-available;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+/* === WELCOME MESSAGE === */
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.welcome-message-and-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+/* === FORM === */
+form {
+  display: flex;
+  width: 100%;
+}
+
+input {
+  display: flex;
+  padding: 16px 20px;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  width: 100%;
+  border: 0;
+  border-radius: 100px;
+  background: #FDFDFD;
+}
+
+form ::placeholder{
+  color: #3C3C3C;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+/* === INGREDIENTS LIST === */
+.ingredients-list-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.ingredients-list-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 8px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.ingredient-pill {
+  display: flex;
+  padding: 8px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  border: 1.4px solid #5E8600;
+  background: rgba(94, 134, 0, 0.08);
+color: #5E8600;
+
+}
+
+.ingredient-pill p{
+  font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+color: #5E8600;
+}
+
+.recipe-generator-button-section{
+  display: flex;
+padding: 20px;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch;
+border-radius: 20px;
+background: #EFEFEF;
+}
+
+.recipe-generator-button-section button{
+  display: flex;
+padding: 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 100px;
+background: #5E8600;
+color: #FDFDFD;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.recipe-generator-button-section button:hover{
+background: #4D6E00;
+}
+
+.recipe-generator-button-section button:focus{
+background: #3B5400;
+
+}
+
+.generated-recipe{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch;
+}
+
+.generated-recipe h2{
+  color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.generated-recipe h3{
+color: #000;
+font-family: Poppins;
+font-size: 19px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.generated-recipe h4{
+  color: #000;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 21px; /* 175% */
+}
