@@ -11,7 +11,7 @@ export default function Header(props) {
       {/* Hamburger menu icon */}
       <img 
         src={WhiteHamburgerMenuIcon} 
-        alt="white-hamburger-menu-icon" 
+        alt="white hamburger menu icon" 
       />
 
       {/* Container for welcome text and input form */}

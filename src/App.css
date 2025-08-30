@@ -1,21 +1,23 @@
 /* === ROOT CONTAINER === */
+/* Styles the root container for the entire app */
 #root {
   display: flex;
-  width: 393px;
-  height: 939px;
-  flex-direction: column;
-  align-items: flex-start;
+  width: 393px; /* Fixed width for mobile layout */
+  height: 939px; /* Fixed height for mobile layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align children to the left */
 }
 
 /* === TYPOGRAPHY === */
+/* Headings and text elements styling for consistency across the app */
 h1 {
-  color: #FDFDFD;
-  font-family: Poppins;
+  color: #FDFDFD; /* White text color */
+  font-family: Poppins; /* Using Poppins font */
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin: 0;
+  margin: 0; /* Remove default margins */
 }
 
 h2 {
@@ -28,80 +30,84 @@ h2 {
   margin: 0;
 }
 
-h3{
-color: #000;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin: 0
+h3 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
 }
 
-h4{
+h4 {
   margin: 0;
   color: #000;
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 600;
-line-height: 21px; 
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px; /* Taller line height for readability */
 }
 
-ul{
-  margin:0;
-  color: #3C3C3C;
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 23px; /* 191.667% */
-}
-
-ol{
+ul {
   margin: 0;
   color: #3C3C3C;
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 23px; /* 191.667% */
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* Consistent spacing for list items */
 }
 
-p{
-color: #3C3C3C;
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin: 0;
+ol {
+  margin: 0;
+  color: #3C3C3C;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
 }
 
+p {
+  color: #3C3C3C;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+/* Special styling for <p> inside header for contrast on dark background */
 header p {
-color: #FDFDFD;
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-margin: 0;
+  color: #FDFDFD;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
 }
 
 /* === BUTTONS === */
+/* Default button styles */
 button {
-  cursor: pointer;
-  border: none;
+  cursor: pointer; /* Show pointer cursor on hover */
+  border: none; /* Remove default border */
 }
 
+/* Ingredient list buttons with pill style */
 .ingredients-list-container button {
   display: flex;
   padding: 5px;
   align-items: center;
   gap: 10px;
-  border-radius: 100px;
+  border-radius: 100px; /* Fully rounded corners */
 }
 
+/* Hover and focus effects for ingredient buttons */
 .ingredients-list-container button:hover {
   background: rgba(94, 134, 0, 0.30);
 }
@@ -111,6 +117,7 @@ button {
 }
 
 /* === HEADER === */
+/* Header section with background and spacing */
 header {
   display: flex;
   flex-direction: column;
@@ -118,18 +125,20 @@ header {
   gap: 24px;
   padding: 24px;
   align-self: stretch;
-  border-radius: 0px 0px 15px 15px;
-  background: #5E8600;
+  border-radius: 0px 0px 15px 15px; /* Rounded bottom corners */
+  background: #5E8600; /* Green background */
 }
 
-header h3{
-    color: #FDFDFD;
+/* White text for h3 headings inside header */
+header h3 {
+  color: #FDFDFD;
 }
 
 /* === MAIN SECTION === */
+/* Main content area layout */
 .main {
   display: flex;
-  width: -webkit-fill-available;
+  width: -webkit-fill-available; /* Full width on WebKit browsers */
   padding: 24px;
   flex-direction: column;
   align-items: flex-start;
@@ -137,6 +146,7 @@ header h3{
 }
 
 /* === WELCOME MESSAGE === */
+/* Layout for welcome message section */
 .welcome-message {
   display: flex;
   flex-direction: column;
@@ -145,6 +155,7 @@ header h3{
   align-self: stretch;
 }
 
+/* Wrapper for welcome message and form below it */
 .welcome-message-and-form {
   display: flex;
   flex-direction: column;
@@ -154,11 +165,13 @@ header h3{
 }
 
 /* === FORM === */
+/* Form layout styling */
 form {
   display: flex;
   width: 100%;
 }
 
+/* Input field styling for form */
 input {
   display: flex;
   padding: 16px 20px;
@@ -168,19 +181,21 @@ input {
   width: 100%;
   border: 0;
   border-radius: 100px;
-  background: #FDFDFD;
+  background: #FDFDFD; /* White background */
 }
 
-form ::placeholder{
+/* Placeholder text styling */
+form ::placeholder {
   color: #3C3C3C;
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* === INGREDIENTS LIST === */
+/* Container for ingredients list section */
 .ingredients-list-section {
   display: flex;
   flex-direction: column;
@@ -189,15 +204,17 @@ line-height: normal;
   align-self: stretch;
 }
 
+/* Wrapper for ingredient pills */
 .ingredients-list-container {
   display: flex;
   align-items: center;
   align-content: center;
   gap: 8px;
   align-self: stretch;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Wrap to next line if space runs out */
 }
 
+/* Individual ingredient pill style */
 .ingredient-pill {
   display: flex;
   padding: 8px 10px;
@@ -207,86 +224,92 @@ line-height: normal;
   border-radius: 100px;
   border: 1.4px solid #5E8600;
   background: rgba(94, 134, 0, 0.08);
-color: #5E8600;
-
+  color: #5E8600;
 }
 
-.ingredient-pill p{
+/* Text inside ingredient pills */
+.ingredient-pill p {
   font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-color: #5E8600;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #5E8600;
 }
 
-.recipe-generator-button-section{
+/* === RECIPE GENERATOR BUTTON SECTION === */
+/* Container for the recipe generator button */
+.recipe-generator-button-section {
   display: flex;
-padding: 20px;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
-align-self: stretch;
-border-radius: 20px;
-background: #EFEFEF;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: #EFEFEF;
 }
 
-.recipe-generator-button-section button{
+/* Styling for the main recipe generator button */
+.recipe-generator-button-section button {
   display: flex;
-padding: 16px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 100px;
-background: #5E8600;
-color: #FDFDFD;
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: #5E8600;
+  color: #FDFDFD;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-.recipe-generator-button-section button:hover{
-background: #4D6E00;
+/* Hover and focus states for recipe button */
+.recipe-generator-button-section button:hover {
+  background: #4D6E00;
 }
 
-.recipe-generator-button-section button:focus{
-background: #3B5400;
-
+.recipe-generator-button-section button:focus {
+  background: #3B5400;
 }
 
-.generated-recipe{
+/* === GENERATED RECIPE SECTION === */
+/* Container for generated recipe content */
+.generated-recipe {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
-align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
 }
 
-.generated-recipe h2{
+/* Headings inside generated recipe section */
+.generated-recipe h2 {
   color: #000;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-.generated-recipe h3{
-color: #000;
-font-family: Poppins;
-font-size: 19px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-
-.generated-recipe h4{
+.generated-recipe h3 {
   color: #000;
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 600;
-line-height: 21px; /* 175% */
+  font-family: Poppins;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.generated-recipe h4 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px; /* 175% */
 }

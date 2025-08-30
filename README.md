@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# 🥗 Recipe Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A recipe generator app built with React, integrating the **Anthropic AI SDK** to suggest creative recipe ideas. The app takes user input (ingredients or preferences) and outputs AI-generated recipe suggestions in a clean, user-friendly interface.
 
-## Available Scripts
+Building this project deepened my understanding of React’s component structure, handling API requests, and managing environment variables securely. I also learned how to structure a React project for scalability and how to work with third-party AI APIs to enrich user experiences.
 
-In the project directory, you can run:
+<img src="src/images/recipe-generator-screenshot.png" alt="Recipe Generator UI" width="500">
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **React** – Component-based frontend framework
+* **JavaScript (ES6+)** – Core application logic
+* **Axios** – HTTP client for API calls
+* **CSS3** – Styling and responsive layouts
+* **React Markdown** – Rendering recipe output with rich formatting
+* **Anthropic AI SDK** – AI-driven recipe generation
+* **dotenv** – Managing environment variables securely
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Key Features
 
-### `npm run build`
+* AI-powered recipe generation from ingredients or prompts
+* Clean, minimal UI for distraction-free usage
+* Reusable, modular React components
+* Markdown rendering for better recipe formatting
+* API key management via `.env.local`
+* Responsive design for desktop viewports
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Build Process
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Created a new React project with `create-react-app`
+2. Integrated **Anthropic AI SDK** and configured `.env.local` for API keys
+3. Built reusable components for input, recipe output, and layout
+4. Styled UI with modern, minimal CSS
+5. Used **Axios** for making API requests
+6. Rendered AI-generated recipes with **React Markdown**
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📚 Lessons Learnt
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* How to securely use environment variables in React apps
+* Best practices for making API requests with Axios
+* Handling asynchronous operations with `async/await`
+* Structuring React projects into reusable modules
+* Using markdown rendering for formatted content
+* Balancing UI/UX simplicity with AI complexity
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧩 Areas for Improvement
 
-## Learn More
+* Add mobile-responsive design
+* Implement user authentication for saving recipes
+* Add copy/share/download recipe features
+* Enable smart ingredient suggestions based on user input
+* Expand to support multiple AI models
+* Add unit and integration testing with React Testing Library
+* Improve error handling and loading states
+* Improve accessibility features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛠 Setup Instructions
 
-### Code Splitting
+1. **Clone the repository:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   git clone https://github.com/your-username/recipe-generator.git
+   cd recipe-generator
+   ```
 
-### Analyzing the Bundle Size
+2. **Install dependencies:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   npm install
+   ```
 
-### Making a Progressive Web App
+3. **Set up environment variables:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   Create a `.env.local` file in the root of your project and add your API key:
 
-### Advanced Configuration
+   ```
+   REACT_APP_API_KEY=your_anthropic_api_key
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. **Start the development server:**
 
-### Deployment
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+5. **Build for production:**
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   npm run build
+   ```

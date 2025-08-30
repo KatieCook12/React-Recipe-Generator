@@ -1,12 +1,16 @@
+/* === BODY STYLING === */
+/* Sets up the overall page layout and background */
 body {
   display: flex;
-  width: 393px;
-  height: 939px;
+  width: 393px; 
+  height: 939px; 
   flex-direction: column;
   align-items: flex-start;
   background: #FDFDFD;
 }
 
+/* === CODE ELEMENT STYLING === */
+/* Sets the font for inline <code> and code blocks */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
