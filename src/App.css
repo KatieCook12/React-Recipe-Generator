@@ -13,7 +13,7 @@
 h1 {
   color: #FDFDFD; /* White text color */
   font-family: Poppins; /* Using Poppins font */
-  font-size: 24px;
+  font-size: 1.5em;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -23,7 +23,7 @@ h1 {
 h2 {
   color: #000;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -33,7 +33,7 @@ h2 {
 h3 {
   color: #000;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -44,7 +44,7 @@ h4 {
   margin: 0;
   color: #000;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 0.75em;
   font-style: normal;
   font-weight: 600;
   line-height: 21px; /* Taller line height for readability */
@@ -54,7 +54,7 @@ ul {
   margin: 0;
   color: #3C3C3C;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 0.75em;
   font-style: normal;
   font-weight: 400;
   line-height: 23px; /* Consistent spacing for list items */
@@ -64,7 +64,7 @@ ol {
   margin: 0;
   color: #3C3C3C;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 0.75em;
   font-style: normal;
   font-weight: 400;
   line-height: 23px;
@@ -73,7 +73,7 @@ ol {
 p {
   color: #3C3C3C;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 0.75em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -84,7 +84,7 @@ p {
 header p {
   color: #FDFDFD;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 0.75em;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -188,7 +188,7 @@ input {
 form ::placeholder {
   color: #3C3C3C;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 0.75em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -230,7 +230,7 @@ form ::placeholder {
 /* Text inside ingredient pills */
 .ingredient-pill p {
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 0.75em;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -261,7 +261,7 @@ form ::placeholder {
   background: #5E8600;
   color: #FDFDFD;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 0.75em;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -290,7 +290,7 @@ form ::placeholder {
 .generated-recipe h2 {
   color: #000;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -299,7 +299,7 @@ form ::placeholder {
 .generated-recipe h3 {
   color: #000;
   font-family: Poppins;
-  font-size: 19px;
+  font-size: 1.188em;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -308,7 +308,7 @@ form ::placeholder {
 .generated-recipe h4 {
   color: #000;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 0.75em;
   font-style: normal;
   font-weight: 600;
   line-height: 21px; /* 175% */
