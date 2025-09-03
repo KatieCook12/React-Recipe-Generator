@@ -13,7 +13,7 @@ export default function RecipeGenerator(props) {
             <h2>Ready for a recipe?</h2>
             
             {/* Brief text explaining what the button does */}
-            <p>Generate a recipe from the list of your ingredients.</p>
+            <p>Generate a recipe from the list of your ingredients</p>
             
             {/* Button triggers the generateRecipe function passed from props when clicked */}
             <button onClick={props.generateRecipe}>
