@@ -17,9 +17,6 @@ const anthropic = new Anthropic({
   dangerouslyAllowBrowser: true,
 });
 
-// Debugs log to verify API key is loaded (will show in browser console)
-console.log("KEY:", process.env.REACT_APP_ANTHROPIC_API_KEY);
-
 /**
  * Calls Claude to get a recipe suggestion based on the provided ingredients.
  * @param {string[]} ingredientsArr - Array of ingredient strings.
