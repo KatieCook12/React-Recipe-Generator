@@ -24,9 +24,6 @@ function App() {
   // Ref: Used to scroll to the recipe section when it's generated
   const recipeSection = React.useRef(null);
 
-  const [liveMessage, setLiveMessage] = React.useState("");     // polite updates
-  const [alertMessage, setAlertMessage] = React.useState("");
-
   // Function: Handles ingredient submission from the Header component form
   function getIngredient(event) {
 
